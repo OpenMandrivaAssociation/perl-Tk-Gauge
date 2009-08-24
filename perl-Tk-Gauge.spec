@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream
 
 BuildRequires: perl(Tk)
 BuildRequires: perl-Tk-devel
+BuildRequires: x11-server-xvfb
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -40,7 +41,7 @@ parentheses):
 %{make}
 
 %check
-%{make} test
+xvfb-run %{make} test
 
 %install
 rm -rf %buildroot
