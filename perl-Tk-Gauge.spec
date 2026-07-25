@@ -2,14 +2,14 @@
 %define upstream_version 0.3
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Create a multitude of analog gauge widgets
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Tk-Gauge
+Source0:	https://cpan.metacpan.org/authors/id/L/LU/LUSOL/Tk-Gauge-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
